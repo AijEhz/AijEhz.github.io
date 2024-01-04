@@ -5,7 +5,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://aijehz.github.io">
+  <link rel="dns-prefetch" href="http://aijehz.github.io">
   <title>TKinter——python窗口视窗模块学习 | AijEhz&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,7 +13,7 @@
   <meta name="description" content="Tkinter 介绍Tkinter 是使用 python 进行窗口视窗设计的模块. 简单的构造, 多平台, 多系统的兼容性, 能让它成为让你快速入门定制窗口文件的好助手. 它在 python 窗口视窗模块中是一款简单型的. 所以用来入门, 熟悉 窗口视窗的使用, 非常有必要。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TKinter——python窗口视窗模块学习">
-<meta property="og:url" content="https://aijehz.github.io/2023/01/03/TKinter%E2%80%94%E2%80%94python%E7%AA%97%E5%8F%A3%E8%A7%86%E7%AA%97%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:url" content="http://aijehz.github.io/2023/01/03/TKinter%E2%80%94%E2%80%94python%E7%AA%97%E5%8F%A3%E8%A7%86%E7%AA%97%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="AijEhz&#39;s blog">
 <meta property="og:description" content="Tkinter 介绍Tkinter 是使用 python 进行窗口视窗设计的模块. 简单的构造, 多平台, 多系统的兼容性, 能让它成为让你快速入门定制窗口文件的好助手. 它在 python 窗口视窗模块中是一款简单型的. 所以用来入门, 熟悉 窗口视窗的使用, 非常有必要。">
 <meta property="og:locale">
@@ -328,7 +328,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://aijehz.github.io/2023/01/03/TKinter%E2%80%94%E2%80%94python%E7%AA%97%E5%8F%A3%E8%A7%86%E7%AA%97%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://aijehz.github.io/2023/01/03/TKinter%E2%80%94%E2%80%94python%E7%AA%97%E5%8F%A3%E8%A7%86%E7%AA%97%E6%A8%A1%E5%9D%97%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -343,11 +343,11 @@
 
 <nav id="article-nav">
   
-    <a href="/2023/01/03/DS1302%E5%AE%9E%E6%97%B6%E6%97%B6%E9%92%9F%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/01/04/LED%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          DS1302实时时钟代码原理及实现
+          LED模块原理及代码
         
       </div>
     </a>
@@ -397,7 +397,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2022-2024 <a href="https://aijehz.github.io/" target="_blank">AijEhz</a>
+    		&copy; 2022-2024 <a href="http://aijehz.github.io/" target="_blank">AijEhz</a>
     	</div>
       	<div class="footer-right">
 			
@@ -720,6 +720,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>

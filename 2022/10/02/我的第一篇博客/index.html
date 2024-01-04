@@ -5,7 +5,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://aijehz.github.io">
+  <link rel="dns-prefetch" href="http://aijehz.github.io">
   <title>我的第一篇博客 | AijEhz&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,12 +13,12 @@
   <meta name="description" content="hello world     测试目录测试目录#这里引用瞄点，括号里的值与上面的id后的值相等。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客">
-<meta property="og:url" content="https://aijehz.github.io/2022/10/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:url" content="http://aijehz.github.io/2022/10/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="AijEhz&#39;s blog">
 <meta property="og:description" content="hello world     测试目录测试目录#这里引用瞄点，括号里的值与上面的id后的值相等。">
 <meta property="og:locale">
 <meta property="og:image" content="https://i0.hdslb.com/bfs/new_dyn/53984e5e180277c802d1f47c05d5eddc1749422532.jpg">
-<meta property="og:image" content="https://aijehz.github.io/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91%E6%9D%BF%E5%AD%A6%E4%B9%A0img%5C%E5%AE%9A%E6%97%B6%E5%99%A8%E4%B8%8E%E4%B8%AD%E6%96%AD%E7%B3%BB%E7%BB%9F.jpg">
+<meta property="og:image" content="http://aijehz.github.io/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91%E6%9D%BF%E5%AD%A6%E4%B9%A0img%5C%E5%AE%9A%E6%97%B6%E5%99%A8%E4%B8%8E%E4%B8%AD%E6%96%AD%E7%B3%BB%E7%BB%9F.jpg">
 <meta property="article:published_time" content="2022-10-02T04:31:57.000Z">
 <meta property="article:modified_time" content="2023-09-25T12:01:14.648Z">
 <meta property="article:author" content="AijEhz">
@@ -331,7 +331,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://aijehz.github.io/2022/10/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://aijehz.github.io/2022/10/02/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -395,7 +395,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2022-2024 <a href="https://aijehz.github.io/" target="_blank">AijEhz</a>
+    		&copy; 2022-2024 <a href="http://aijehz.github.io/" target="_blank">AijEhz</a>
     	</div>
       	<div class="footer-right">
 			
@@ -718,6 +718,35 @@
   </div>
 
   
+<script type="text/javascript" src="/plugins/TweenMax/TweenMax.min.js"></script>
+<script type="text/javascript" src="/plugins/TweenMax/HoverImg.js"></script>
+
+<script>
+
+
+  var hoverEffect = {
+    "subNav": ".left-col .social a"
+  }
+
+
+  for (var x in hoverEffect) {
+    // 初始化data-img属性值
+    let $em = document.querySelectorAll(hoverEffect[x]);
+    $em.forEach(($a) => {
+      //console.log($a.href);
+      if (isImageType($a.href)) {
+        $a.setAttribute("data-img", $a.href)
+      }
+    })
+    // 实现悬停元素预览图片效果
+    let $a = document.querySelectorAll(hoverEffect[x] + "[data-img]");
+    $a.forEach(($em) => {
+      new HoverImgFx1($em)
+    })
+  }
+
+</script>
+
   
 <script type="text/javascript" src="/plugins/activate-power-mode/activate-power-mode.js"></script>
 <script>
