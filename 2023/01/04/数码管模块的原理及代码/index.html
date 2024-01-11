@@ -30,6 +30,8 @@
     <link rel="icon" href="/favicon.ico">
   
   
+    <link rel="apple-touch-icon" href="/Ture">
+  
   <link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
   <style type="text/css">
     
@@ -62,7 +64,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
+<div class="overlay" style="background: #F4F8Fb;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -76,11 +78,11 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="/" >主页</a></li>
 			
-				<li><a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" target="_blank">嵌入式</a></li>
+				<li><a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" >嵌入式</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" >随笔</a></li>
 			
 			</ul>
 		</nav>
@@ -95,6 +97,8 @@
 				
 			
 				
+					<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+				
 			
 		</nav>
 		<nav class="header-nav">
@@ -102,22 +106,22 @@
 				
 					
 						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+												title="GitHub" ><i class="icon-github"></i></a>
 					
 				
 					
 						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+												title="GitHub" ><i class="icon-github"></i></a>
 					
 				
 					
 						<a class="gitee" href="#" 
-												title="码云" target="_blank"><i class="icon-gitee"></i></a>
+												title="码云" ><i class="icon-gitee"></i></a>
 					
 				
 					
 						<a class="jianshu" href="#" 
-												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+												title="简书" ><i class="icon-jianshu"></i></a>
 					
 				
 			</div>
@@ -137,7 +141,7 @@
       
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #F4F8Fb"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -428,6 +432,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">数码管模块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%95%B0%E7%A0%81%E6%98%BE%E7%A4%BA"><span class="toc-number">1.1.</span> <span class="toc-text">静态数码显示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.1.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">1.1.2.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E6%95%B0%E7%A0%81%E7%AE%A1%E6%98%BE%E7%A4%BA"><span class="toc-number">1.2.</span> <span class="toc-text">动态数码管显示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%9F%E7%90%86-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">代码</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -553,6 +570,8 @@
       
     
       
+      
+      
     
     
 
@@ -560,13 +579,15 @@
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -701,6 +722,13 @@
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+        
+          
+  	  		<div class="aboutme-wrap" id="aboutme">小菜鸟一个</div>
+  	  	
+    	</section>
     
   </div>
   

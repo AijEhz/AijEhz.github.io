@@ -19,7 +19,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/AijEhz/picgo@main/blogs/pictures/DS1302_%E6%97%B6%E5%BA%8F.jpg">
 <meta property="article:published_time" content="2023-01-04T12:44:22.000Z">
-<meta property="article:modified_time" content="2024-01-04T14:40:44.985Z">
+<meta property="article:modified_time" content="2024-01-11T05:04:43.159Z">
 <meta property="article:author" content="AijEhz">
 <meta property="article:tag" content="嵌入式">
 <meta property="article:tag" content="51单片机">
@@ -31,6 +31,8 @@
   
     <link rel="icon" href="/favicon.ico">
   
+  
+    <link rel="apple-touch-icon" href="/Ture">
   
   <link rel="stylesheet" type="text/css" href="/./main.a5fda8.css">
   <style type="text/css">
@@ -64,7 +66,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
+<div class="overlay" style="background: #F4F8Fb;background: url('/img/biubiubiu.gif') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -78,11 +80,11 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="/" >主页</a></li>
 			
-				<li><a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" target="_blank">嵌入式</a></li>
+				<li><a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" >嵌入式</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" >随笔</a></li>
 			
 			</ul>
 		</nav>
@@ -97,6 +99,8 @@
 				
 			
 				
+					<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+				
 			
 		</nav>
 		<nav class="header-nav">
@@ -104,22 +108,22 @@
 				
 					
 						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+												title="GitHub" ><i class="icon-github"></i></a>
 					
 				
 					
 						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+												title="GitHub" ><i class="icon-github"></i></a>
 					
 				
 					
 						<a class="gitee" href="#" 
-												title="码云" target="_blank"><i class="icon-gitee"></i></a>
+												title="码云" ><i class="icon-gitee"></i></a>
 					
 				
 					
 						<a class="jianshu" href="#" 
-												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+												title="简书" ><i class="icon-jianshu"></i></a>
 					
 				
 			</div>
@@ -139,7 +143,7 @@
       
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #F4F8Fb"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -247,7 +251,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">419字</span>
+      <span class="post-count">1.2k字</span>
     </span>
   </span>
 
@@ -256,7 +260,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">2分</span>
+      <span class="post-count">6分</span>
     </span>
   </span>
 </div>
@@ -269,7 +273,7 @@
     
     <p>DS1302实时时钟原理及代码实现</p>
 <span id="more"></span>
-<h1 id="DS1302实时时钟"><a href="#DS1302实时时钟" class="headerlink" title="DS1302实时时钟"></a>DS1302实时时钟</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h3 id="DS1302介绍"><a href="#DS1302介绍" class="headerlink" title="DS1302介绍"></a>DS1302介绍</h3><p><strong>DS1302</strong>是由美国DALLAS公司推出的具有涓细电流充电能力的低功耗实时时钟芯片。它可以对年、月、日、周、时、分、秒进行计时，且具有闰年补偿等多种功能。<br>**RTC(Real Time Clock)**：实时时钟，是一种集成电路，通常称为时钟芯片。  </p>
+<h1 id="DS1302实时时钟"><a href="#DS1302实时时钟" class="headerlink" title="DS1302实时时钟"></a>DS1302实时时钟</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h3 id="DS1302介绍"><a href="#DS1302介绍" class="headerlink" title="DS1302介绍"></a>DS1302介绍</h3><p><strong>DS1302</strong> 是由美国DALLAS公司推出的具有涓细电流充电能力的低功耗实时时钟芯片。它可以对年、月、日、周、时、分、秒进行计时，且具有闰年补偿等多种功能。<br><strong>RTC(Real Time Clock)</strong> ：实时时钟，是一种集成电路，通常称为时钟芯片。  </p>
 <h3 id="DS1302引脚及功能"><a href="#DS1302引脚及功能" class="headerlink" title="DS1302引脚及功能"></a>DS1302引脚及功能</h3><table>
 <thead>
 <tr>
@@ -309,7 +313,7 @@
 <td></td>
 </tr>
 </tbody></table>
-<h3 id="DS1302寄存器定义"><a href="#DS1302寄存器定义" class="headerlink" title="DS1302寄存器定义"></a>DS1302寄存器定义</h3><p><strong>RTC</strong>										</p>
+<h3 id="DS1302寄存器定义"><a href="#DS1302寄存器定义" class="headerlink" title="DS1302寄存器定义"></a>DS1302寄存器定义</h3><p><strong>RTC</strong></p>
 <table>
 <thead>
 <tr>
@@ -472,7 +476,12 @@
 <h3 id="DS1302寄存器时序"><a href="#DS1302寄存器时序" class="headerlink" title="DS1302寄存器时序"></a>DS1302寄存器时序</h3><p><img src="https://cdn.jsdelivr.net/gh/AijEhz/picgo@main/blogs/pictures/DS1302_%E6%97%B6%E5%BA%8F.jpg" alt="DS1302_时序"></p>
 <h2 id="BCD码"><a href="#BCD码" class="headerlink" title="BCD码"></a>BCD码</h2><p>BCD码（Binary Coded Decimal），用4位二进制数来表示1位十进制数 </p>
 <p><strong>例：</strong> 0001 0011表示13，1000 0101表示85，0001 1010不合法<br>在十六进制中的体现：0x13表示13，0x85表示85，0x1A不合法<br>BCD码转十进制：DEC&#x3D;BCD&#x2F;16<em>10+BCD%16; （2位BCD）<br>十进制转BCD码：BCD&#x3D;DEC&#x2F;10</em>16+DEC%10; （2位BCD）</p>
-<h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h3 id="DS1302实时时钟显示"><a href="#DS1302实时时钟显示" class="headerlink" title="DS1302实时时钟显示"></a>DS1302实时时钟显示</h3><p>导入LCD1602.c和LCD1602.h模块用于显示操作</p>
+<h4 id="main-c"><a href="#main-c" class="headerlink" title="main.c"></a>main.c</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;DS1302.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;LCD1602.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	LCD_Init();</span><br><span class="line">	DS1302_Init();</span><br><span class="line">	DS1302_SetTime();</span><br><span class="line">	LCD_ShowString(<span class="number">1</span>,<span class="number">1</span>,<span class="string">&quot;  -  -  &quot;</span>);</span><br><span class="line">	LCD_ShowString(<span class="number">2</span>,<span class="number">1</span>,<span class="string">&quot;  :  :    星期 &quot;</span>);</span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		DS1302_ReadTime();<span class="comment">//读取时间</span></span><br><span class="line">		LCD_ShowNum(<span class="number">1</span>,<span class="number">1</span>,DS1302_Time[<span class="number">0</span>],<span class="number">2</span>);<span class="comment">//显示年</span></span><br><span class="line">		LCD_ShowNum(<span class="number">1</span>,<span class="number">4</span>,DS1302_Time[<span class="number">1</span>],<span class="number">2</span>);<span class="comment">//显示月</span></span><br><span class="line">		LCD_ShowNum(<span class="number">1</span>,<span class="number">7</span>,DS1302_Time[<span class="number">2</span>],<span class="number">2</span>);<span class="comment">//显示日</span></span><br><span class="line">		LCD_ShowNum(<span class="number">2</span>,<span class="number">1</span>,DS1302_Time[<span class="number">3</span>],<span class="number">2</span>);<span class="comment">//显示时</span></span><br><span class="line">		LCD_ShowNum(<span class="number">2</span>,<span class="number">4</span>,DS1302_Time[<span class="number">4</span>],<span class="number">2</span>);<span class="comment">//显示分</span></span><br><span class="line">		LCD_ShowNum(<span class="number">2</span>,<span class="number">7</span>,DS1302_Time[<span class="number">5</span>],<span class="number">2</span>);<span class="comment">//显示秒</span></span><br><span class="line">		LCD_ShowNum(<span class="number">2</span>,<span class="number">13</span>,DS1302_Time[<span class="number">6</span>],<span class="number">1</span>);<span class="comment">//显示星期</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="DS1302-h"><a href="#DS1302-h" class="headerlink" title="DS1302.h"></a>DS1302.h</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __DS1302_H__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __DS1302_H__</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">extern</span> <span class="type">unsigned</span> <span class="type">char</span> DS1302_Time[];</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_Init</span><span class="params">()</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_WriteByte</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> Command,Data)</span>;</span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">DS1302_ReadByte</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> Command)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_SetTime</span><span class="params">(<span class="type">void</span>)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_ReadTime</span><span class="params">(<span class="type">void</span>)</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="DS1302-c"><a href="#DS1302-c" class="headerlink" title="DS1302.c"></a>DS1302.c</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"></span><br><span class="line">sbit DS1302_SCLK=P3^<span class="number">6</span>;</span><br><span class="line">sbit DS1302_IO=P3^<span class="number">4</span>;</span><br><span class="line">sbit DS1302_CE=P3^<span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_SECOND		0x80 <span class="comment">//秒</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_MINUTE		0x82 <span class="comment">//分</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_HOUR			0x84 <span class="comment">//时</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_DATE			0x86 <span class="comment">//日</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_MONTH		0x88 <span class="comment">//月</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_YEAR			0x8C <span class="comment">//年</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_DAY		    0x8A <span class="comment">//星期</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DS1302_WP			0x8E <span class="comment">//写入控制寄存器</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//时间寄存器，年，月，日，时，分，秒，星期</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> DS1302_Time[]=&#123;<span class="number">23</span>,<span class="number">8</span>,<span class="number">29</span>,<span class="number">20</span>,<span class="number">59</span>,<span class="number">55</span>,<span class="number">3</span>&#125;;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief DS1302初始化</span></span><br><span class="line"><span class="comment">  * @param  </span></span><br><span class="line"><span class="comment">  * @retval 初始化DS1302使能端CE，初始化DS1302脉冲信号</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_Init</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	DS1302_CE=<span class="number">0</span>;<span class="comment">//使能端置零</span></span><br><span class="line">	DS1302_SCLK=<span class="number">0</span>;<span class="comment">//脉冲信号置零</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief DS302写操作</span></span><br><span class="line"><span class="comment">  * @param Command 控制字</span></span><br><span class="line"><span class="comment">  * @param Data 即将写入的数据</span></span><br><span class="line"><span class="comment">  * @retval 通过控制字的可控制，输入对应的数据</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_WriteByte</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> Command,Data)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	DS1302_CE=<span class="number">1</span>;<span class="comment">//使能端置1</span></span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DS1302_IO=Command&amp;(<span class="number">0x01</span>&lt;&lt;i);<span class="comment">//commmand 命令字第一位为0，为写操作</span></span><br><span class="line">		DS1302_SCLK=<span class="number">1</span>;<span class="comment">//上升沿脉冲信号</span></span><br><span class="line">		DS1302_SCLK=<span class="number">0</span>;<span class="comment">//脉冲信号置零</span></span><br><span class="line">	&#125;</span><br><span class="line">		<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DS1302_IO=Data&amp;(<span class="number">0x01</span>&lt;&lt;i);</span><br><span class="line">		DS1302_SCLK=<span class="number">1</span>;</span><br><span class="line">		DS1302_SCLK=<span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	DS1302_CE=<span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief DS1302读操作</span></span><br><span class="line"><span class="comment">  * @param Command写入控制字</span></span><br><span class="line"><span class="comment">  * @retval 通过控制字的控制，读取对应的数值</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">DS1302_ReadByte</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> Command)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i,Data=<span class="number">0x00</span>;</span><br><span class="line">	Command|=<span class="number">0x01</span>;<span class="comment">//写地址或运算0x01为读命令字</span></span><br><span class="line">	DS1302_CE=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DS1302_IO=Command&amp;(<span class="number">0x01</span>&lt;&lt;i);</span><br><span class="line">		<span class="comment">//以下两行异于写操作，因为读 操作data数据位下降沿触发</span></span><br><span class="line">		DS1302_SCLK=<span class="number">0</span>;</span><br><span class="line">		DS1302_SCLK=<span class="number">1</span>;</span><br><span class="line">		</span><br><span class="line">	&#125;</span><br><span class="line">		<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DS1302_SCLK=<span class="number">1</span>;</span><br><span class="line">		DS1302_SCLK=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">if</span>(DS1302_IO)&#123;Data|=(<span class="number">0x01</span>&lt;&lt;i);&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	DS1302_CE=<span class="number">0</span>;</span><br><span class="line">	DS1302_IO=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span> Data;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief 时间设置程序</span></span><br><span class="line"><span class="comment">  * @param  无</span></span><br><span class="line"><span class="comment">  * @retval 通过读取DS1302_Time数组，进行时间设置</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_SetTime</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	DS1302_WriteByte(DS1302_WP,<span class="number">0x00</span>);<span class="comment">//关闭写保护</span></span><br><span class="line">	DS1302_WriteByte(DS1302_SECOND,DS1302_Time[<span class="number">5</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">5</span>]%<span class="number">10</span>);<span class="comment">//写入秒，10进制转码16进制</span></span><br><span class="line">	DS1302_WriteByte(DS1302_MINUTE,DS1302_Time[<span class="number">4</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">4</span>]%<span class="number">10</span>);</span><br><span class="line">	DS1302_WriteByte(DS1302_HOUR,DS1302_Time[<span class="number">3</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">3</span>]%<span class="number">10</span>);</span><br><span class="line">	DS1302_WriteByte(DS1302_DATE,DS1302_Time[<span class="number">2</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">2</span>]%<span class="number">10</span>);</span><br><span class="line">	DS1302_WriteByte(DS1302_MONTH,DS1302_Time[<span class="number">1</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">1</span>]%<span class="number">10</span>);</span><br><span class="line">	DS1302_WriteByte(DS1302_YEAR,DS1302_Time[<span class="number">0</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">0</span>]%<span class="number">10</span>);</span><br><span class="line">	DS1302_WriteByte(DS1302_DAY,DS1302_Time[<span class="number">6</span>]/<span class="number">10</span>*<span class="number">16</span>+DS1302_Time[<span class="number">6</span>]%<span class="number">10</span>);</span><br><span class="line">	DS1302_WriteByte(DS1302_WP,<span class="number">0x80</span>);<span class="comment">//开启写保护</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief 时间读取程序</span></span><br><span class="line"><span class="comment">  * @param 无</span></span><br><span class="line"><span class="comment">  * @retval 对时间进行读取，并且存储到DS1302_Time之中</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">DS1302_ReadTime</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> Temp;<span class="comment">//用于暂时存储BCD码数据</span></span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_YEAR);<span class="comment">//BCD码转换十进制</span></span><br><span class="line">	DS1302_Time[<span class="number">0</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_MONTH);</span><br><span class="line">	DS1302_Time[<span class="number">1</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_DATE);</span><br><span class="line">	DS1302_Time[<span class="number">2</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_HOUR);</span><br><span class="line">	DS1302_Time[<span class="number">3</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_MINUTE);</span><br><span class="line">	DS1302_Time[<span class="number">4</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_SECOND);</span><br><span class="line">	DS1302_Time[<span class="number">5</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">	Temp=DS1302_ReadByte(DS1302_DAY);</span><br><span class="line">	DS1302_Time[<span class="number">6</span>]=Temp/<span class="number">16</span>*<span class="number">10</span>+Temp%<span class="number">16</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
     
 
     
@@ -584,6 +593,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DS1302%E5%AE%9E%E6%97%B6%E6%97%B6%E9%92%9F"><span class="toc-number">1.</span> <span class="toc-text">DS1302实时时钟</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DS1302%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.1.1.</span> <span class="toc-text">DS1302介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DS1302%E5%BC%95%E8%84%9A%E5%8F%8A%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.2.</span> <span class="toc-text">DS1302引脚及功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DS1302%E5%AF%84%E5%AD%98%E5%99%A8%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.3.</span> <span class="toc-text">DS1302寄存器定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DS1302%E5%AF%84%E5%AD%98%E5%99%A8%E6%97%B6%E5%BA%8F"><span class="toc-number">1.1.4.</span> <span class="toc-text">DS1302寄存器时序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BCD%E7%A0%81"><span class="toc-number">1.2.</span> <span class="toc-text">BCD码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text">代码实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DS1302%E5%AE%9E%E6%97%B6%E6%97%B6%E9%92%9F%E6%98%BE%E7%A4%BA"><span class="toc-number">1.3.1.</span> <span class="toc-text">DS1302实时时钟显示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#main-c"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">main.c</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DS1302-h"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">DS1302.h</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DS1302-c"><span class="toc-number">1.3.1.3.</span> <span class="toc-text">DS1302.c</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -710,6 +732,8 @@
       
     
       
+      
+      
     
     
 
@@ -717,13 +741,15 @@
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
       
         
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -858,6 +884,13 @@
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+        
+          
+  	  		<div class="aboutme-wrap" id="aboutme">小菜鸟一个</div>
+  	  	
+    	</section>
     
   </div>
   
