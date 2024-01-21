@@ -6,17 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://aijehz.github.io">
-  <title>Tag: 嵌入式 | AijEhz&#39;s blog</title>
+  <title>蜂鸣器模块的原理及应用 | AijEhz&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="AijEhz&#39;s blog">
-<meta property="og:url" content="http://aijehz.github.io/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/index.html">
+  <meta name="description" content="51单片机蜂鸣器模块的原理及代码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="蜂鸣器模块的原理及应用">
+<meta property="og:url" content="http://aijehz.github.io/2024/01/20/%E8%9C%82%E9%B8%A3%E5%99%A8%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/index.html">
 <meta property="og:site_name" content="AijEhz&#39;s blog">
+<meta property="og:description" content="51单片机蜂鸣器模块的原理及代码">
 <meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/AijEhz/picgo@main/blogs/pictures/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%AE%80%E8%B0%B1.jpg">
+<meta property="article:published_time" content="2024-01-20T03:18:00.000Z">
+<meta property="article:modified_time" content="2024-01-20T05:43:02.526Z">
 <meta property="article:author" content="AijEhz">
+<meta property="article:tag" content="嵌入式">
+<meta property="article:tag" content="51单片机">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/AijEhz/picgo@main/blogs/pictures/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%AE%80%E8%B0%B1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="AijEhz&#39;s blog" type="application/atom+xml">
   
@@ -210,88 +218,438 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-蜂鸣器模块的原理及应用" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2024/01/20/AT24C02-I2C%E6%80%BB%E7%BA%BF-%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" class="archive-article-date">
-        <time datetime="2024-01-20T13:51:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-20</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2024/01/20/AT24C02-I2C%E6%80%BB%E7%BA%BF-%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" target="_blank">AT24C02(I2C总线)的原理及应用</a>
   
+    <h1 class="article-title" itemprop="name">
+      蜂鸣器模块的原理及应用
     </h1>
   
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/2024/01/20/%E8%9C%82%E9%B8%A3%E5%99%A8%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" class="archive-article-date">
         <time datetime="2024-01-20T03:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-01-20</time>
 </a>
 
-        </div>
-    	 
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2024/01/20/%E8%9C%82%E9%B8%A3%E5%99%A8%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" target="_blank">蜂鸣器模块的原理及应用</a>
   
-    </h1>
-  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.5k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">7分</span>
+    </span>
+  </span>
+</div>
 
 
-        <div class="article-info info-on-right">
-          
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>51单片机蜂鸣器模块的原理及代码</p>
+<span id="more"></span>
+
+<h1 id="蜂鸣器模块"><a href="#蜂鸣器模块" class="headerlink" title="蜂鸣器模块"></a>蜂鸣器模块</h1><p>将<strong>电信号</strong>转换为<strong>声音信号</strong>的电子元器件，常用于设备按键的提示音、报警音等</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>根据蜂鸣器的内部电路结构是否包含振荡源分为<strong>有源蜂鸣器</strong>和<strong>无源蜂鸣器</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>种类</th>
+<th>特点</th>
+<th>驱动电路</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>有源蜂鸣器</td>
+<td>内部自带振荡源，发声频率固定</td>
+<td>正负极连接电源即可发声</td>
+</tr>
+<tr>
+<td>无源蜂鸣器</td>
+<td>内部无振荡源，频率不固定，频率可由控制器控制</td>
+<td>常由三极管驱动电路驱动，或由集成电路驱动（如ULN2003）驱动</td>
+</tr>
+</tbody></table>
+<h2 id="音调与频率对照表格（c调）"><a href="#音调与频率对照表格（c调）" class="headerlink" title="音调与频率对照表格（c调）"></a>音调与频率对照表格（c调）</h2><p>由于程序中Buzzer端口值为每1&#x2F;2周期翻转一次，因此装载值需取半；</p>
+<table>
+<thead>
+<tr>
+<th>音符</th>
+<th>频率(Hz)</th>
+<th>周期(us)</th>
+<th>周期&#x2F;2(us)</th>
+<th>取整</th>
+<th>重装载值</th>
+<th>索引</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>262</td>
+<td>3816.793893</td>
+<td>1908.396947</td>
+<td>1908</td>
+<td>63628</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1#</td>
+<td>277</td>
+<td>3610.108303</td>
+<td>1805.054152</td>
+<td>1805</td>
+<td>63731</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>294</td>
+<td>3401.360544</td>
+<td>1700.680272</td>
+<td>1701</td>
+<td>63835</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2#</td>
+<td>311</td>
+<td>3215.434084</td>
+<td>1607.717042</td>
+<td>1608</td>
+<td>63928</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>330</td>
+<td>3030.30303</td>
+<td>1515.151515</td>
+<td>1515</td>
+<td>64021</td>
+<td>5</td>
+</tr>
+<tr>
+<td>4</td>
+<td>349</td>
+<td>2865.329513</td>
+<td>1432.664756</td>
+<td>1433</td>
+<td>64103</td>
+<td>6</td>
+</tr>
+<tr>
+<td>4#</td>
+<td>370</td>
+<td>2702.702703</td>
+<td>1351.351351</td>
+<td>1351</td>
+<td>64185</td>
+<td>7</td>
+</tr>
+<tr>
+<td>5</td>
+<td>392</td>
+<td>2551.020408</td>
+<td>1275.510204</td>
+<td>1276</td>
+<td>64260</td>
+<td>8</td>
+</tr>
+<tr>
+<td>5#</td>
+<td>415</td>
+<td>2409.638554</td>
+<td>1204.819277</td>
+<td>1205</td>
+<td>64331</td>
+<td>9</td>
+</tr>
+<tr>
+<td>6</td>
+<td>440</td>
+<td>2272.727273</td>
+<td>1136.363636</td>
+<td>1136</td>
+<td>64400</td>
+<td>10</td>
+</tr>
+<tr>
+<td>6#</td>
+<td>466</td>
+<td>2145.922747</td>
+<td>1072.961373</td>
+<td>1073</td>
+<td>64463</td>
+<td>11</td>
+</tr>
+<tr>
+<td>7</td>
+<td>496</td>
+<td>2016.129032</td>
+<td>1008.064516</td>
+<td>1008</td>
+<td>64528</td>
+<td>12</td>
+</tr>
+<tr>
+<td>1</td>
+<td>523</td>
+<td>1912.045889</td>
+<td>956.0229446</td>
+<td>956</td>
+<td>64580</td>
+<td>13</td>
+</tr>
+<tr>
+<td>1#</td>
+<td>554</td>
+<td>1805.054152</td>
+<td>902.5270758</td>
+<td>903</td>
+<td>64633</td>
+<td>14</td>
+</tr>
+<tr>
+<td>2</td>
+<td>587</td>
+<td>1703.577513</td>
+<td>851.7887564</td>
+<td>852</td>
+<td>64684</td>
+<td>15</td>
+</tr>
+<tr>
+<td>2#</td>
+<td>622</td>
+<td>1607.717042</td>
+<td>803.8585209</td>
+<td>804</td>
+<td>64732</td>
+<td>16</td>
+</tr>
+<tr>
+<td>3</td>
+<td>659</td>
+<td>1517.450683</td>
+<td>758.7253414</td>
+<td>759</td>
+<td>64777</td>
+<td>17</td>
+</tr>
+<tr>
+<td>4</td>
+<td>698</td>
+<td>1432.664756</td>
+<td>716.3323782</td>
+<td>716</td>
+<td>64820</td>
+<td>18</td>
+</tr>
+<tr>
+<td>4#</td>
+<td>740</td>
+<td>1351.351351</td>
+<td>675.6756757</td>
+<td>676</td>
+<td>64860</td>
+<td>19</td>
+</tr>
+<tr>
+<td>5</td>
+<td>784</td>
+<td>1275.510204</td>
+<td>637.755102</td>
+<td>638</td>
+<td>64898</td>
+<td>20</td>
+</tr>
+<tr>
+<td>5#</td>
+<td>831</td>
+<td>1203.369434</td>
+<td>601.6847172</td>
+<td>602</td>
+<td>64934</td>
+<td>21</td>
+</tr>
+<tr>
+<td>6</td>
+<td>880</td>
+<td>1136.363636</td>
+<td>568.1818182</td>
+<td>568</td>
+<td>64968</td>
+<td>22</td>
+</tr>
+<tr>
+<td>6#</td>
+<td>932</td>
+<td>1072.961373</td>
+<td>536.4806867</td>
+<td>536</td>
+<td>65000</td>
+<td>23</td>
+</tr>
+<tr>
+<td>7</td>
+<td>988</td>
+<td>1012.145749</td>
+<td>506.0728745</td>
+<td>506</td>
+<td>65030</td>
+<td>24</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1046</td>
+<td>956.0229446</td>
+<td>478.0114723</td>
+<td>478</td>
+<td>65058</td>
+<td>25</td>
+</tr>
+<tr>
+<td>1#</td>
+<td>1109</td>
+<td>901.7132552</td>
+<td>450.8566276</td>
+<td>451</td>
+<td>65085</td>
+<td>26</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1175</td>
+<td>851.0638298</td>
+<td>425.5319149</td>
+<td>426</td>
+<td>65110</td>
+<td>27</td>
+</tr>
+<tr>
+<td>2#</td>
+<td>1245</td>
+<td>803.2128514</td>
+<td>401.6064257</td>
+<td>402</td>
+<td>65134</td>
+<td>28</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1318</td>
+<td>758.7253414</td>
+<td>379.3626707</td>
+<td>379</td>
+<td>65157</td>
+<td>29</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1397</td>
+<td>715.8196135</td>
+<td>357.9098067</td>
+<td>358</td>
+<td>65178</td>
+<td>30</td>
+</tr>
+<tr>
+<td>4#</td>
+<td>1480</td>
+<td>675.6756757</td>
+<td>337.8378378</td>
+<td>338</td>
+<td>65198</td>
+<td>31</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1568</td>
+<td>637.755102</td>
+<td>318.877551</td>
+<td>319</td>
+<td>65217</td>
+<td>32</td>
+</tr>
+<tr>
+<td>5#</td>
+<td>1661</td>
+<td>602.0469597</td>
+<td>301.0234798</td>
+<td>301</td>
+<td>65235</td>
+<td>33</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1760</td>
+<td>568.1818182</td>
+<td>284.0909091</td>
+<td>284</td>
+<td>65252</td>
+<td>34</td>
+</tr>
+<tr>
+<td>6#</td>
+<td>1865</td>
+<td>536.1930295</td>
+<td>268.0965147</td>
+<td>268</td>
+<td>65268</td>
+<td>35</td>
+</tr>
+<tr>
+<td>7</td>
+<td>1976</td>
+<td>506.0728745</td>
+<td>253.0364372</td>
+<td>253</td>
+<td>65283</td>
+<td>36</td>
+</tr>
+</tbody></table>
+<h2 id="蜂鸣器实现按键提示音（音频为1000Hz）"><a href="#蜂鸣器实现按键提示音（音频为1000Hz）" class="headerlink" title="蜂鸣器实现按键提示音（音频为1000Hz）"></a>蜂鸣器实现按键提示音（音频为1000Hz）</h2><h3 id="main-c"><a href="#main-c" class="headerlink" title="main.c"></a>main.c</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;key_num.h&quot;</span><span class="comment">//导入已有按键模块</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;digital.h&quot;</span><span class="comment">//导入已有数码管模块</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;Buzzer.h&quot;</span><span class="comment">//导入蜂鸣器模块</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> key;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        key = KeyNum();</span><br><span class="line">        <span class="keyword">if</span> (key)</span><br><span class="line">        &#123;</span><br><span class="line">            digital_ctrl(<span class="number">1</span>, key);</span><br><span class="line">            Buzzer_Time(<span class="number">100</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Buzzer-h"><a href="#Buzzer-h" class="headerlink" title="Buzzer.h"></a>Buzzer.h</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">ifndef</span> __BUZZER_H__</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __BUZZER_H__</span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">Buzzer_Time</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> xms)</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;intrins.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//端口配置</span></span><br><span class="line">sbit Buzzer = P2 ^ <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	@brief 蜂鸣器延时模块，延时500us</span></span><br><span class="line"><span class="comment">	@param 无</span></span><br><span class="line"><span class="comment">	@retval 无</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Buzzer_Delay</span><span class="params">()</span> <span class="comment">//@11.0592MHz</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line"></span><br><span class="line">	_nop_();</span><br><span class="line">	i = <span class="number">227</span>;</span><br><span class="line">	<span class="keyword">while</span> (--i);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	@brief brief 蜂鸣器输出模块</span></span><br><span class="line"><span class="comment">	@param xms 蜂鸣器输出时间</span></span><br><span class="line"><span class="comment">	@retval 无</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Buzzer_Time</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> xms)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; (xms * <span class="number">2</span>); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		Buzzer = !Buzzer;</span><br><span class="line">		Buzzer_Delay();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="蜂鸣器播放音乐（以天空之城为例）"><a href="#蜂鸣器播放音乐（以天空之城为例）" class="headerlink" title="蜂鸣器播放音乐（以天空之城为例）"></a>蜂鸣器播放音乐（以天空之城为例）</h2><h3 id="天空之城曲谱"><a href="#天空之城曲谱" class="headerlink" title="天空之城曲谱"></a>天空之城曲谱</h3><p><img src="https://cdn.jsdelivr.net/gh/AijEhz/picgo@main/blogs/pictures/%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E7%AE%80%E8%B0%B1.jpg" alt="天空之城简谱"></p>
+<h3 id="mian-c"><a href="#mian-c" class="headerlink" title="mian.c"></a>mian.c</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;delay.h&quot;</span><span class="comment">//导入已有延时模块</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;timer0.h&quot;</span><span class="comment">//导入已有中断模块</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//配置端口</span></span><br><span class="line">sbit Buzzer = P2 ^ <span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义选择参数</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> FreqSelect, MusicSelect;</span><br><span class="line"></span><br><span class="line"><span class="comment">//c调频率对照表</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">int</span> code FrequTab[] = &#123;<span class="number">63628</span>, <span class="number">63731</span>, <span class="number">63835</span>, <span class="number">63928</span>, <span class="number">64021</span>, <span class="number">64103</span>, <span class="number">64185</span>, <span class="number">64260</span>, <span class="number">64331</span>, <span class="number">64400</span>, <span class="number">64463</span>, <span class="number">64528</span>,</span><br><span class="line">								<span class="number">64580</span>, <span class="number">64633</span>, <span class="number">64684</span>, <span class="number">64732</span>, <span class="number">64777</span>, <span class="number">64820</span>, <span class="number">64860</span>, <span class="number">64898</span>, <span class="number">64934</span>, <span class="number">64968</span>, <span class="number">65000</span>, <span class="number">65030</span>,</span><br><span class="line">								<span class="number">65058</span>, <span class="number">65085</span>, <span class="number">65110</span>, <span class="number">65134</span>, <span class="number">65157</span>, <span class="number">65178</span>, <span class="number">65198</span>, <span class="number">65217</span>, <span class="number">65235</span>, <span class="number">65252</span>, <span class="number">65268</span>, <span class="number">65283</span>&#125;;</span><br><span class="line"><span class="comment">// 播放速度，值为四分音符的时长(ms)</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> SPEED 500</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 音符与索引对应表，P：休止符，L：低音，M：中音，H：高音，下划线：升半音符号#</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> P 0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L1 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L1_ 2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L2 3</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L2_ 4</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L3 5</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L4 6</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L4_ 7</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L5 8</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L5_ 9</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L6 10</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L6_ 11</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L7 12</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M1 13</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M1_ 14</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M2 15</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M2_ 16</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M3 17</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M4 18</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M4_ 19</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M5 20</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M5_ 21</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M6 22</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M6_ 23</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> M7 24</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H1 25</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H1_ 26</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H2 27</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H2_ 28</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H3 29</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H4 30</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H4_ 31</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H5 32</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H5_ 33</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H6 34</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H6_ 35</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> H7 36</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 乐谱</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> code Music[] = &#123;</span><br><span class="line">	<span class="comment">// 音符,时值,</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// 1</span></span><br><span class="line">	P, <span class="number">4</span>,</span><br><span class="line">	P, <span class="number">4</span>,</span><br><span class="line">	P, <span class="number">4</span>,</span><br><span class="line">	M6, <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	H1, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M7, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	M3, <span class="number">2</span>,</span><br><span class="line">	M3, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 2</span></span><br><span class="line">	M6, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M5, <span class="number">2</span>,</span><br><span class="line">	M6, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M5, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	M3, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M4, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M3, <span class="number">2</span>,</span><br><span class="line">	M4, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 3</span></span><br><span class="line">	M3, <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	P, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	M7, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M4_, <span class="number">2</span>,</span><br><span class="line">	M4_, <span class="number">4</span>,</span><br><span class="line">	M7, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M7, <span class="number">8</span>,</span><br><span class="line">	P, <span class="number">4</span>,</span><br><span class="line">	M6, <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 4</span></span><br><span class="line">	H1, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M7, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	M3, <span class="number">2</span>,</span><br><span class="line">	M3, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	M6, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M5, <span class="number">2</span>,</span><br><span class="line">	M6, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 5</span></span><br><span class="line">	M5, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	M2, <span class="number">2</span>,</span><br><span class="line">	M3, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	M4, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span> + <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span> + <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H3, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 6</span></span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line">	M6, <span class="number">2</span>,</span><br><span class="line">	M6, <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">4</span>,</span><br><span class="line">	M5_, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M6, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	H3, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line">	H5, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 7</span></span><br><span class="line">	H2, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	M5, <span class="number">2</span>,</span><br><span class="line">	M5, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	H1, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H3, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 8</span></span><br><span class="line">	M6, <span class="number">2</span>,</span><br><span class="line">	M7, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line">	M7, <span class="number">4</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	H1, <span class="number">4</span> + <span class="number">2</span>,</span><br><span class="line">	M5, <span class="number">2</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H4, <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 9</span></span><br><span class="line">	H3, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H6, <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	H5, <span class="number">4</span>,</span><br><span class="line">	H5, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H3, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	P, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 10</span></span><br><span class="line">	H2, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">4</span>,</span><br><span class="line">	H5, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H3, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	H3, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	H6, <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	H5, <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 11</span></span><br><span class="line">	H3, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	P, <span class="number">2</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line"></span><br><span class="line">	H2, <span class="number">4</span>,</span><br><span class="line">	H1, <span class="number">2</span>,</span><br><span class="line">	H2, <span class="number">2</span> + <span class="number">4</span>,</span><br><span class="line">	M7, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	M6, <span class="number">4</span> + <span class="number">4</span> + <span class="number">4</span>,</span><br><span class="line">	P, <span class="number">4</span>,</span><br><span class="line"></span><br><span class="line">	<span class="number">0xFF</span> <span class="comment">// 终止标志</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	Timer0Init();</span><br><span class="line">	<span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span> (Music[MusicSelect] != <span class="number">0xFF</span>) <span class="comment">// 如果不是停止标志位</span></span><br><span class="line">		&#123;</span><br><span class="line">			FreqSelect = Music[MusicSelect]; <span class="comment">// 选择音符对应的频率</span></span><br><span class="line">			MusicSelect++;</span><br><span class="line">			Delay(SPEED / <span class="number">4</span> * Music[MusicSelect]); <span class="comment">// 选择音符对应的时值</span></span><br><span class="line">			MusicSelect++;</span><br><span class="line">			TR0 = <span class="number">0</span>;  <span class="comment">// 关闭定时器</span></span><br><span class="line">			Delay(<span class="number">5</span>); <span class="comment">// 音符间短暂停顿</span></span><br><span class="line">			TR0 = <span class="number">1</span>;  <span class="comment">// 开启定时器</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="comment">// 如果是停止标志位</span></span><br><span class="line">		&#123;</span><br><span class="line">			TR0 = <span class="number">0</span>;</span><br><span class="line">			<span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">				;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">Timer0_Rountine</span><span class="params">()</span> interrupt 1</span><br><span class="line">&#123;</span><br><span class="line">	TL0 = FrequTab[FreqSelect] % <span class="number">256</span>; <span class="comment">// 设置定时初值</span></span><br><span class="line">	TH0 = FrequTab[FreqSelect] / <span class="number">256</span>; <span class="comment">// 设置定时初值</span></span><br><span class="line">	Buzzer = !Buzzer;<span class="comment">//Buzzer端口电平翻转</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -307,409 +665,129 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://aijehz.github.io/2024/01/20/%E8%9C%82%E9%B8%A3%E5%99%A8%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
   
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
+    <a href="/2024/01/20/AT24C02-I2C%E6%80%BB%E7%BA%BF-%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          AT24C02(I2C总线)的原理及应用
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/01/04/DS1302%E5%AE%9E%E6%97%B6%E6%97%B6%E9%92%9F%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">DS1302实时时钟代码原理及实现</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/DS1302%E5%AE%9E%E6%97%B6%E6%97%B6%E9%92%9F%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-        <time datetime="2023-01-04T12:44:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%9C%82%E9%B8%A3%E5%99%A8%E6%A8%A1%E5%9D%97"><span class="toc-number">1.</span> <span class="toc-text">蜂鸣器模块</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.</span> <span class="toc-text">分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9F%B3%E8%B0%83%E4%B8%8E%E9%A2%91%E7%8E%87%E5%AF%B9%E7%85%A7%E8%A1%A8%E6%A0%BC%EF%BC%88c%E8%B0%83%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">音调与频率对照表格（c调）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%9C%82%E9%B8%A3%E5%99%A8%E5%AE%9E%E7%8E%B0%E6%8C%89%E9%94%AE%E6%8F%90%E7%A4%BA%E9%9F%B3%EF%BC%88%E9%9F%B3%E9%A2%91%E4%B8%BA1000Hz%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">蜂鸣器实现按键提示音（音频为1000Hz）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#main-c"><span class="toc-number">1.3.1.</span> <span class="toc-text">main.c</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Buzzer-h"><span class="toc-number">1.3.2.</span> <span class="toc-text">Buzzer.h</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%9C%82%E9%B8%A3%E5%99%A8%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90%EF%BC%88%E4%BB%A5%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E4%B8%BA%E4%BE%8B%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">蜂鸣器播放音乐（以天空之城为例）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A9%E7%A9%BA%E4%B9%8B%E5%9F%8E%E6%9B%B2%E8%B0%B1"><span class="toc-number">1.4.1.</span> <span class="toc-text">天空之城曲谱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mian-c"><span class="toc-number">1.4.2.</span> <span class="toc-text">mian.c</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/DS1302%E5%AE%9E%E6%97%B6%E6%97%B6%E9%92%9F%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" target="_blank">DS1302实时时钟代码原理及实现</a>
-  
-    </h1>
-  
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/LED%E7%82%B9%E9%98%B5%E5%B1%8F%E6%A8%A1%E5%9D%97%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" class="archive-article-date">
-        <time datetime="2023-01-04T08:43:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/LED%E7%82%B9%E9%98%B5%E5%B1%8F%E6%A8%A1%E5%9D%97%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" target="_blank">LED点阵屏模块原理及应用</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9D%97%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-        <time datetime="2023-01-04T08:34:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/%E4%B8%B2%E5%8F%A3%E9%80%9A%E4%BF%A1%E6%A8%A1%E5%9D%97%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/" target="_blank">串口通信模块原理及代码实现</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/%E5%AE%9A%E6%97%B6%E5%99%A8%E4%B8%8E%E4%B8%AD%E6%96%AD%E6%A8%A1%E5%9D%97%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" class="archive-article-date">
-        <time datetime="2023-01-04T08:26:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/%E5%AE%9A%E6%97%B6%E5%99%A8%E4%B8%8E%E4%B8%AD%E6%96%AD%E6%A8%A1%E5%9D%97%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/" target="_blank">定时器与中断模块原理及应用</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/%E7%9F%A9%E9%98%B5%E9%94%AE%E7%9B%98%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-        <time datetime="2023-01-04T08:17:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/%E7%9F%A9%E9%98%B5%E9%94%AE%E7%9B%98%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" target="_blank">矩阵键盘模块的原理及代码</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B%E5%8F%8A%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/" class="archive-article-date">
-        <time datetime="2023-01-04T08:15:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B%E5%8F%8A%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/" target="_blank">模块化编程及调试工具</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-        <time datetime="2023-01-04T08:12:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" target="_blank">数码管模块的原理及代码</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/01/04/%E7%8B%AC%E7%AB%8B%E6%8C%89%E9%94%AE%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-        <time datetime="2023-01-04T08:07:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2023/01/04/%E7%8B%AC%E7%AB%8B%E6%8C%89%E9%94%AE%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" target="_blank">独立按键模块的原理及代码</a>
-  
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/page/2/">2</a><a class="extend next" rel="next" href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -750,9 +828,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
