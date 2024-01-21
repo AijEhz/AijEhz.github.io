@@ -19,7 +19,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/AijEhz/picgo@main/blogs/pictures/%E4%B8%B2%E5%8F%A3%E4%B8%8E%E4%B8%AD%E6%96%AD%E7%B3%BB%E7%BB%9F.jpg">
 <meta property="article:published_time" content="2023-01-04T08:34:45.000Z">
-<meta property="article:modified_time" content="2024-01-11T15:04:47.929Z">
+<meta property="article:modified_time" content="2024-01-20T14:09:01.500Z">
 <meta property="article:author" content="AijEhz">
 <meta property="article:tag" content="嵌入式">
 <meta property="article:tag" content="51单片机">
@@ -478,22 +478,10 @@
 <td>TI</td>
 <td>RI</td>
 </tr>
-<tr>
-<td>2. SCON位功能</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody></table>
-<ol>
-<li><strong>SM0&#x2F;FE:</strong><br>  当PCON寄存器中的SMOD0&#x2F;PCON.6位为1时，该位用于帧错误检测。当检测到一个无效停止位时，通过UART接收器设置该位。它必须由软件清零。<br>  当PCON寄存器中的SMOD0&#x2F;PCON.6位为0时，该位和SM1一起指定串行通信的工作	<br>  方式，如下表所示:<br>  其中SM0、SM1按下列组合确定串行口的工作方式：<table>
+<ol start="2">
+<li>SCON位功能  <ol>
+<li><strong>SM0&#x2F;FE:</strong><br>当PCON寄存器中的SMOD0&#x2F;PCON.6位为1时，该位用于帧错误检测。当检测到一个无效停止位时，通过UART接收器设置该位。它必须由软件清零。<br>当PCON寄存器中的SMOD0&#x2F;PCON.6位为0时，该位和SM1一起指定串行通信的工作<br>方式，如下表所示:<br>其中SM0、SM1按下列组合确定串行口的工作方式：<table>
 <thead>
 <tr>
 <th>SM0</th>
@@ -531,23 +519,31 @@
 <td>9位UART，波特率可变</td>
 <td>(2SMOD&#x2F;32 )x(定时器1的溢出率)</td>
 </tr>
+<tr>
+<td>当单片机工作在12T模式时，定时器 &#x3D; SYSclk&#x2F;12&#x2F;( 256 - TH1)；</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>当单片机工作在6T模式时, 定时器 &#x3D; SYSclk &#x2F; 6 &#x2F;( 256 - TH1)</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody></table>
-  当单片机工作在12T模式时，定时器 &#x3D; SYSclk&#x2F;12&#x2F;( 256 - TH1)；<br>  当单片机工作在6T模式时, 定时器 &#x3D; SYSclk &#x2F; 6 &#x2F;( 256 - TH1)<ol>
-<li><strong>SM2：</strong><br> 允许方式2或方式3多机通信控制位。在方式2或方式3时，如SM2位为1，REN位为1，则从机处于只有接收到RB8位为1（地址帧）时才激活中断请求标志位RI为1，并向主机请求中断处理。被确认为寻址的丛机则复位SM2位为0，从而才接收RB8为0的数据帧。在方式1时，如果SM2位为1，则只有在接收到有效的停止位时才置位中断请求标志位RI为1；在方式0时，SM2 应为0。</li>
+</li>
+<li><strong>SM2：</strong><br>允许方式2或方式3多机通信控制位。在方式2或方式3时，如SM2位为1，REN位为1，则从机处于只有接收到RB8位为1（地址帧）时才激活中断请求标志位RI为1，并向主机请求中断处理。被确认为寻址的丛机则复位SM2位为0，从而才接收RB8为0的数据帧。在方式1时，如果SM2位为1，则只有在接收到有效的停止位时才置位中断请求标志位RI为1；在方式0时，SM2 应为0。  </li>
+<li><strong>REN：</strong><br>允许&#x2F;禁止串行接收控制位。由软件置位REN，即REN&#x3D;1为允许串行接收状态，可启动串行接收器RxD，开始接收信息。软件复位REN，即REN&#x3D;0，则禁止接收。</li>
+<li><strong>TB8：</strong><br>在方式2或方式3，它为要发送的第9位数据，按需要由软件置位或清0。例如，可用作数据的校验位或多机通信中表示地址帧&#x2F;数据帧的标志位。</li>
+<li><strong>RB8：</strong><br>在方式2或方式3，是接收到的第9位数据。在方式1，若SM2&#x3D;0，则RB8是接收到的停止位。方式0不用RB8。</li>
+<li><strong>TI：</strong><br>发送中断请求标志位。在方式0，当串行发送数据第8位结束时，由内部硬件自动置位，即TI&#x3D;1，向主机请求中断，响应中断后必须用软件复位，即TI&#x3D;0。在其他方式中，则在停止位开始发送时由内部硬件置位，必须用软件复位。  </li>
+<li><strong>RI：</strong><br>接收中断请求标志位。在方式0，当串行接收到第8位结束时由内部硬件自动置位RI&#x3D;1，向主机请求中断，响应中断后必须用软件复位，即RI&#x3D;0。在其他方式中，串行接收到停止位的中间时刻由内部硬件置位，即RI&#x3D;1（例外情况见SM2说明），必须由软件复位，即RI&#x3D;0。</li>
 </ol>
 </li>
 </ol>
-<pre><code>2. **REN：**
-    允许/禁止串行接收控制位。由软件置位REN，即REN=1为允许串行接收状态，可启动串行接收器RxD，开始接收信息。软件复位REN，即REN=0，则禁止接收。
-3. **TB8：**  
-       在方式2或方式3，它为要发送的第9位数据，按需要由软件置位或清0。例如，可用作数据的校验位或多机通信中表示地址帧/数据帧的标志位。
-4. **RB8：** 
-       在方式2或方式3，是接收到的第9位数据。在方式1，若SM2=0，则RB8是接收到的停止位。方式0不用RB8。
-5. **TI：**  
-       发送中断请求标志位。在方式0，当串行发送数据第8位结束时，由内部硬件自动置位，即TI=1，向主机请求中断，响应中断后必须用软件复位，即TI=0。在其他方式中，则在停止位开始发送时由内部硬件置位，必须用软件复位。  
-1. **RI：**   
-    接收中断请求标志位。在方式0，当串行接收到第8位结束时由内部硬件自动置位RI=1，向主机请求中断，响应中断后必须用软件复位，即RI=0。在其他方式中，串行接收到停止位的中间时刻由内部硬件置位，即RI=1（例外情况见SM2说明），必须由软件复位，即RI=0。  
-</code></pre>
 <h4 id="电源控制寄存器PCON中的SMOD-x2F-PCON-7"><a href="#电源控制寄存器PCON中的SMOD-x2F-PCON-7" class="headerlink" title="电源控制寄存器PCON中的SMOD&#x2F;PCON.7"></a>电源控制寄存器PCON中的SMOD&#x2F;PCON.7</h4><p>用于设置方式1、方式2、方式3的波特率是否加倍。<br>电源控制寄存器PCON格式如下：<br>PCON : 电源控制寄存器 (不可位寻址)   </p>
 <table>
 <thead>
