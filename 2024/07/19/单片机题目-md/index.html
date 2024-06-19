@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content=".answer {         text-decoration: underline;         cursor: pointer;     }   Ch2 一、填空题：      当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 ___ 地址。     MCS-51的堆栈是软件填写堆栈指针临时在 ___。     当使用8751且EA&#x3D;1，程序存储器地址小于 ___">
+  <meta name="description" content=".answer {         text-decoration: underline;         cursor: pointer;     }   Ch2 一、填空题：      当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 ___ 地址。     MCS-51的堆栈是软件填写堆栈指针临时在 ___ 数据存储器内开辟的区域。     当使用8751且EA&#x3D;1，程序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单片机题目">
 <meta property="og:url" content="http://aijehz.github.io/2024/07/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/index.html">
 <meta property="og:site_name" content="AijEhz&#39;s blog">
-<meta property="og:description" content=".answer {         text-decoration: underline;         cursor: pointer;     }   Ch2 一、填空题：      当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 ___ 地址。     MCS-51的堆栈是软件填写堆栈指针临时在 ___。     当使用8751且EA&#x3D;1，程序存储器地址小于 ___">
+<meta property="og:description" content=".answer {         text-decoration: underline;         cursor: pointer;     }   Ch2 一、填空题：      当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 ___ 地址。     MCS-51的堆栈是软件填写堆栈指针临时在 ___ 数据存储器内开辟的区域。     当使用8751且EA&#x3D;1，程序">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-07-19T10:39:06.000Z">
-<meta property="article:modified_time" content="2024-06-19T11:43:15.782Z">
+<meta property="article:modified_time" content="2024-06-19T12:43:23.373Z">
 <meta property="article:author" content="AijEhz">
 <meta property="article:tag" content="嵌入式">
 <meta property="article:tag" content="51单片机">
@@ -249,7 +249,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">4.2k字</span>
+      <span class="post-count">4.3k字</span>
     </span>
   </span>
 
@@ -258,7 +258,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">16分</span>
+      <span class="post-count">17分</span>
     </span>
   </span>
 </div>
@@ -280,28 +280,28 @@
 <h2>Ch2</h2>
 <h3>一、填空题：</h3>
 <ol>
-    <li>当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 <span class="answer" onclick="this.innerHTML = '<b>低8位地址</b>'">___</span> 地址。</li>
-    <li>MCS-51的堆栈是软件填写堆栈指针临时在 <span class="answer" onclick="this.innerHTML = '<b>片内数据存储器内开辟的区域</b>'">___</span>。</li>
+    <li>当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 <span class="answer" onclick="this.innerHTML = '<b>低8位</b>'">___</span> 地址。</li>
+    <li>MCS-51的堆栈是软件填写堆栈指针临时在 <span class="answer" onclick="this.innerHTML = '<b>片内</b>'">___</span> 数据存储器内开辟的区域。</li>
     <li>当使用8751且EA=1，程序存储器地址小于 <span class="answer" onclick="this.innerHTML = '<b>1000H</b>'">___</span> 时，访问的是片内ROM。</li>
     <li>MCS-51系统中，当PSEN信号有效时，表示CPU要从 <span class="answer" onclick="this.innerHTML = '<b>外部程序</b>'">___</span> 存储器读取信息。</li>
     <li>MCS-51有4组工作寄存器，它们的地址范围是 <span class="answer" onclick="this.innerHTML = '<b>00H~1FH</b>'">___</span>。</li>
     <li>MCS-51片内20H~2FH范围内的数据存储器，既可以字节寻址又可以 <span class="answer" onclick="this.innerHTML = '<b>位</b>'">___</span> 寻址。</li>
     <li>PSW中RS1 RS0=10时，R2的地址为 <span class="answer" onclick="this.innerHTML = '<b>12H</b>'">___</span>。</li>
     <li>PSW中RS1 RS0=11时，R2的地址为 <span class="answer" onclick="this.innerHTML = '<b>1AH</b>'">___</span>。</li>
-    <li>单片机系统复位后，（PSW）=00H，因此片内RAM寄存区的当前寄存器是第 <span class="answer" onclick="this.innerHTML = '<b>0</b>'">___</span>。</li>
+    <li>单片机系统复位后，（PSW）=00H，因此片内RAM寄存区的当前寄存器是第 <span class="answer" onclick="this.innerHTML = '<b>0</b>'">___</span> 组，8个寄存器的单元地址为 <span class="answer" onclick="this.innerHTML = '<b>00H</b>'">___</span> ~ <span class="answer" onclick="this.innerHTML = '<b>07H</b>'">___</span>。</li>
     <li>PC复位后为 <span class="answer" onclick="this.innerHTML = '<b>0000H</b>'">___</span>。</li>
-    <li>一个机器周期= <span class="answer" onclick="this.innerHTML = '<b>12</b>'">___</span> 个时钟周期。</li>
-    <li>PC的内容为 <span class="answer" onclick="this.innerHTML = '<b>将要执行的指令地址</b>'">___</span>。</li>
+    <li>一个机器周期= <span class="answer" onclick="this.innerHTML = '<b>12</b>'">___</span> 个振荡周期= <span class="answer" onclick="this.innerHTML = '<b>6</b>'">___</span> 个时钟周期。</li>
+    <li>PC的内容为 <span class="answer" onclick="this.innerHTML = '<b>将要执行的的指令地址</b>'">___</span>。</li>
     <li>在MCS－51单片机中，如果采用6MHz晶振，1个机器周期为 <span class="answer" onclick="this.innerHTML = '<b>2us</b>'">___</span>。</li>
     <li>内部RAM中，位地址为30H的位，该位所在字节的字节地址为 <span class="answer" onclick="this.innerHTML = '<b>26H</b>'">___</span>。</li>
     <li>若A中的内容为63H，那么，P标志位的值为 <span class="answer" onclick="this.innerHTML = '<b>0</b>'">___</span>。</li>
-    <li>8051单片机复位后，R4所对应的存储单元的地址为 <span class="answer" onclick="this.innerHTML = '<b>04H</b>'">___</span> 工作寄存器区。</li>
-    <li>使用8031芯片时，需将/EA引脚接 <span class="answer" onclick="this.innerHTML = '<b>低</b>'">___</span> 存储器。</li>
-    <li>片内RAM低128个单元划分为哪3个主要部分： <span class="answer" onclick="this.innerHTML = '<b>工作寄存器区</b>'">___</span>。</li>
-    <li>通过堆栈操作实现子程序调用，首先就要把 <span class="answer" onclick="this.innerHTML = '<b>PC</b>'">___</span>。</li>
-    <li>MCS－51单片机程序存储器的寻址范围是由程序计数器PC的位数所决定的，因为MCS－51的PC是16位的，因此其寻址的范围为 <span class="answer" onclick="this.innerHTML = '<b>64</b>'">___</span> KB。</li>
-    <li>MCS-51单片机片内RAM的寄存器共有 <span class="answer" onclick="this.innerHTML = '<b>32</b>'">___</span> 个单元，以R0~R7作为寄存器名称。</li>
-    <li>当单片机的型号为8031/8032时，其芯片引线EA一定要接 <span class="answer" onclick="this.innerHTML = '<b>低</b>'">___</span> 电平。</li>
+    <li>8051单片机复位后，R4所对应的存储单元的地址为 <span class="answer" onclick="this.innerHTML = '<b>04H</b>'">___</span>，因上电时PSW= <span class="answer" onclick="this.innerHTML = '<b>00H</b>'">___</span>。这时当前的工作寄存器区是第 <span class="answer" onclick="this.innerHTML = '<b>0</b>'">___</span> 工作寄存器区。</li>
+    <li>使用8031芯片时，需将/EA引脚接 <span class="answer" onclick="this.innerHTML = '<b>低</b>'">___</span> 电平，因为其片内无 <span class="answer" onclick="this.innerHTML = '<b>程序</b>'">___</span> 存储器。</li>
+    <li>片内RAM低128个单元划分为哪3个主要部分： <span class="answer" onclick="this.innerHTML = '<b>工作寄存器区</b>'">___</span> 、 <span class="answer" onclick="this.innerHTML = '<b>位寻址区</b>'">___</span> 和 <span class="answer" onclick="this.innerHTML = '<b>用户RAM区</b>'">___</span>。</li>
+    <li>通过堆栈操作实现子程序调用，首先就要把 <span class="answer" onclick="this.innerHTML = '<b>PC</b>'">___</span> 的内容入栈，以进行断点保护。调用返回时，再进行出栈保护，把保护的断点送回到 <span class="answer" onclick="this.innerHTML = '<b>PC</b>'">___</span>。</li>
+    <li>MCS－51单片机程序存储器的寻址范围是由程序计数器PC的位数所决定的，因为MCS－51的PC是16位的，因此其寻址的范围为 <span class="answer" onclick="this.innerHTML = '<b>64KB</b>'">___</span>。</li>
+    <li>MCS-51单片机片内RAM的寄存器共有 32 个单元，分为 <span class="answer" onclick="this.innerHTML = '<b>4</b>'">___</span> 组寄存器，每组 <span class="answer" onclick="this.innerHTML = '<b>8</b>'">___</span> 个单元，以R0~R7作为寄存器名称。</li>
+    <li>但单片机的型号为8031/8032时，其芯片引线EA一定要接 <span class="answer" onclick="this.innerHTML = '<b>低</b>'">___</span> 电平。</li>
 </ol>
 
 <h3>二、选择题：</h3>
