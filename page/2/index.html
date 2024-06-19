@@ -217,6 +217,98 @@
             
 
   
+    <article id="post-独立按键模块的原理及代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2023/01/04/%E7%8B%AC%E7%AB%8B%E6%8C%89%E9%94%AE%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" target="_blank">独立按键模块的原理及代码</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2023/01/04/%E7%8B%AC%E7%AB%8B%E6%8C%89%E9%94%AE%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" class="archive-article-date">
+        <time datetime="2023-01-04T08:07:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p>51单片机独立按键模块的原理及代码</p>
+    
+    <a class="article-more-a" href="/2023/01/04/%E7%8B%AC%E7%AB%8B%E6%8C%89%E9%94%AE%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/#more">more >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2023/01/04/%E7%8B%AC%E7%AB%8B%E6%8C%89%E9%94%AE%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-LED模块的原理及代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -419,6 +511,59 @@
 <p><img src="/51%E5%8D%95%E7%89%87%E6%9C%BA%E5%BC%80%E5%8F%91%E6%9D%BF%E5%AD%A6%E4%B9%A0img%5C%E5%AE%9A%E6%97%B6%E5%99%A8%E4%B8%8E%E4%B8%AD%E6%96%AD%E7%B3%BB%E7%BB%9F.jpg" alt="这是图片"></p>
 <p><a id='test'></a></p>
 <h4 id="测试目录"><a href="#测试目录" class="headerlink" title="测试目录"></a>测试目录</h4><p>测试目录<br>#这里引用瞄点，括号里的值与上面的id后的值相等。</p>
+<style>
+    .answer {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+
+<h3 id="一、填空题："><a href="#一、填空题：" class="headerlink" title="一、填空题："></a>一、填空题：</h3><ol>
+<li><p>当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 <span onclick="this.innerHTML = '<b>低8位地址</b>'" class="answer">__________</span> 地址。</p>
+</li>
+<li><p>MCS-51的堆栈是软件填写堆栈指针临时在 <span onclick="this.innerHTML = '<b>片内数据存储器内开辟的区域</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>当使用8751且EA&#x3D;1，程序存储器地址小于 <span onclick="this.innerHTML = '<b>1000H</b>'" class="answer">__________</span> 时，访问的是片内ROM。</p>
+</li>
+<li><p>MCS-51系统中，当PSEN信号有效时，表示CPU要从 <span onclick="this.innerHTML = '<b>外部程序</b>'" class="answer">__________</span> 存储器读取信息。</p>
+</li>
+<li><p>MCS-51有4组工作寄存器，它们的地址范围是 <span onclick="this.innerHTML = '<b>00H~1FH</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>MCS-51片内20H~2FH范围内的数据存储器，既可以字节寻址又可以 <span onclick="this.innerHTML = '<b>位</b>'" class="answer">__________</span> 寻址。</p>
+</li>
+<li><p>PSW中RS1  RS0&#x3D;10时，R2的地址为 <span onclick="this.innerHTML = '<b>12H</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>PSW中RS1  RS0&#x3D;11时，R2的地址为 <span onclick="this.innerHTML = '<b>1AH</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>单片机系统复位后，（PSW）&#x3D;00H，因此片内RAM寄存区的当前寄存器是第 <span onclick="this.innerHTML = '<b>0</b>'" class="answer"><strong><strong><strong><strong><strong></span> 组，8个寄存器的单元地址为 <span onclick="this.innerHTML = '<b>00H</b>'" class="answer"></strong></strong></strong></strong></strong></span> ~ <span onclick="this.innerHTML = '<b>07H</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>PC复位后为 <span onclick="this.innerHTML = '<b>0000H</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>一个机器周期&#x3D; <span onclick="this.innerHTML = '<b>12</b>'" class="answer"><strong><strong><strong><strong><strong></span> 个振荡周期&#x3D; <span onclick="this.innerHTML = '<b>6</b>'" class="answer"></strong></strong></strong></strong></strong></span> 个时钟周期。</p>
+</li>
+<li><p>PC的内容为 <span onclick="this.innerHTML = '<b>将要执行的指令地址</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>在MCS－51单片机中，如果采用6MHz晶振，1个机器周期为 <span onclick="this.innerHTML = '<b>2us</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>内部RAM中，位地址为30H的位，该位所在字节的字节地址为 <span onclick="this.innerHTML = '<b>26H</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>若A中的内容为63H，那么，P标志位的值为 <span onclick="this.innerHTML = '<b>0</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>8051单片机复位后，R4所对应的存储单元的地址为 <span onclick="this.innerHTML = '<b>04H</b>'" class="answer"><strong><strong><strong><strong><strong></span>，因上电时PSW&#x3D; <span onclick="this.innerHTML = '<b>00H</b>'" class="answer"></strong></strong></strong></strong></strong></span>。这时当前的工作寄存器区是第 <span onclick="this.innerHTML = '<b>0</b>'" class="answer">__________</span> 工作寄存器区。</p>
+</li>
+<li><p>使用8031芯片时，需将&#x2F;EA引脚接 <span onclick="this.innerHTML = '<b>低</b>'" class="answer"><strong><strong><strong><strong><strong></span> 电平，因为其片内无 <span onclick="this.innerHTML = '<b>程序</b>'" class="answer"></strong></strong></strong></strong></strong></span> 存储器。</p>
+</li>
+<li><p>片内RAM低128个单元划分为哪3个主要部分： <span onclick="this.innerHTML = '<b>工作寄存器区</b>'" class="answer"><strong><strong><strong><strong><strong></span> 、 <span onclick="this.innerHTML = '<b>位寻址区</b>'" class="answer"></strong></strong></strong></strong></strong></span> 和 <span onclick="this.innerHTML = '<b>用户RAM区</b>'" class="answer">__________</span>。</p>
+</li>
+<li><p>通过堆栈操作实现子程序调用，首先就要把 <span onclick="this.innerHTML = '<b>PC</b>'" class="answer"><strong><strong><strong><strong><strong></span> 的内容入栈，以进行断点保护。调用返回时，再进行出栈保护，把保护的断点送回到 <span onclick="this.innerHTML = '<b>PC</b>'" class="answer"></strong></strong></strong></strong></strong></span>。</p>
+</li>
+<li><p>MCS－51单片机程序存储器的寻址范围是由程序计数器PC的位数所决定的，因为MCS－51的PC是16位的，因此其寻址的范围为 <span onclick="this.innerHTML = '<b>64</b>'" class="answer">__________</span> KB。</p>
+</li>
+<li><p>MCS-51单片机片内RAM的寄存器共有 <span onclick="this.innerHTML = '<b>32</b>'" class="answer"><strong><strong><strong><strong><strong></span> 个单元，分为 <span onclick="this.innerHTML = '<b>4</b>'" class="answer"></strong></strong></strong></strong></strong></span> 组寄存器，每组 <span onclick="this.innerHTML = '<b>8</b>'" class="answer">__________</span> 个单元，以R0~R7作为寄存器名称。</p>
+</li>
+<li><p>当单片机的型号为8031&#x2F;8032时，其芯片引线EA一定要接 <span onclick="this.innerHTML = '<b>低</b>'" class="answer">__________</span> 电平。</p>
+</li>
+</ol>
 
     
 
