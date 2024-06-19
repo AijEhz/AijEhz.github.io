@@ -225,7 +225,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2024/06/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/" target="_blank">单片机题目</a>
+	  <a class="article-title" href="/2024/07/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/" target="_blank">单片机题目</a>
   
     </h1>
   
@@ -233,8 +233,8 @@
 
   
   
-<a href="/2024/06/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/" class="archive-article-date">
-        <time datetime="2024-06-19T10:39:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-19</time>
+<a href="/2024/07/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/" class="archive-article-date">
+        <time datetime="2024-07-19T10:39:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-07-19</time>
 </a>
 
   
@@ -246,15 +246,16 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <style>
+    <span id="more"></span>
+<style>
     .answer {
         text-decoration: underline;
         cursor: pointer;
     }
 </style>
+
 <h2>Ch2</h2>
 <h3>一、填空题：</h3>
-
 <ol>
     <li>当MCS-51引脚ALE有效时，表示从P0口稳定地送出了 <span class="answer" onclick="this.innerHTML = '<b>低8位地址</b>'">___</span> 地址。</li>
     <li>MCS-51的堆栈是软件填写堆栈指针临时在 <span class="answer" onclick="this.innerHTML = '<b>片内数据存储器内开辟的区域</b>'">___</span>。</li>
@@ -727,9 +728,7 @@ ADD A，@R0
     <li>MUL AB指令执行后，OV标志为1，则（B）不为 <span class="answer" onclick="this.innerHTML = '<b>00H</b>'">___</span>。
     </li>
     <li>用一条指令
-    <span class="answer" onclick="this.innerHTML = '<div class="code-block">
-            <code>LJMP 1234H</code>
-        </div>'">___</span>。
+    <span class="answer" onclick="this.innerHTML = '<b>LJMP 1234H</b>'">___</span>。
         可以取代下列4条指令：
         <div class="code-block">
             <code>MOV DPTR，#1234H</code><br>
@@ -747,6 +746,127 @@ ADD A，@R0
 </ol>
 
 <h2>Ch5</h2>
+<h3>一、填空题：</h3>
+<ol>
+    <li>MCS-51有5个中断源，2个中断优先级，优先级由软件填写特殊功能寄存器 <span class="answer" onclick="this.innerHTML = '<b>IP</b>'">___</span> 加以选择。</li>
+    <li>外中断请求标志位是 <span class="answer" onclick="this.innerHTML = '<b>IE0</b>'">___</span> 和 <span class="answer" onclick="this.innerHTML = '<b>IE1</b>'">___</span>。</li>
+    <li><span class="answer" onclick="this.innerHTML = '<b>RETI</b>'">___</span> 指令以及任何访问 <span class="answer" onclick="this.innerHTML = '<b>IE</b>'">___</span> 和 <span class="answer" onclick="this.innerHTML = '<b>IP</b>'">___</span> 寄存器的指令执行过后，CPU不能马上响应中断。</li>
+    <li>8051单片机响应中断后，产生长调用指令LCALL，执行该指令的过程包括：首先把 <span class="answer" onclick="this.innerHTML = '<b>PC</b>'">___</span> 的内容压入堆栈，以进行断点保护，然后把长调用指令的16位地址送 <span class="answer" onclick="this.innerHTML = '<b>PC</b>'">___</span>，使程序执行转向 <span class="answer" onclick="this.innerHTML = '<b>程序存储器</b>'">___</span> 中的中断地址区。</li>
+</ol>
+
+<h3>二、选择题：</h3>
+<ol>
+    <li>在中断服务程序中，至少应有一条（ <span class="answer" onclick="this.innerHTML = '<b>D</b>'">___</span> ）。
+        <ul>
+            <li>A、传送指令</li>
+            <li>B、转移指令</li>
+            <li>C、加法指令</li>
+            <li>D、 中断返回指令</li>
+        </ul>
+    </li>
+    <li>要使MCS-51能够响应定时器T1中断，串行接口中断，它的中断允许寄存器IE的内容应是（ <span class="answer" onclick="this.innerHTML = '<b>A</b>'">___</span> ）。
+        <ul>
+            <li>A、 98H</li>
+            <li>B、 84H</li>
+            <li>C、 42H</li>
+            <li>D、 22H</li>
+        </ul>
+    </li>
+    <li>MCS-51响应中断时，下列哪种操作不会发生（ <span class="answer" onclick="this.innerHTML = '<b>A</b>'">___</span> ）
+        <ul>
+            <li>A、保护现场</li>
+            <li>B、保护PC</li>
+            <li>C、找到中断入口</li>
+            <li>D、保护PC转入中断入口</li>
+        </ul>
+    </li>
+    <li>MCS-51中断源有（ <span class="answer" onclick="this.innerHTML = '<b>A</b>'">___</span> ）
+        <ul>
+            <li>A、 5个</li>
+            <li>B、 2个</li>
+            <li>C、 3个</li>
+            <li>D、 6个</li>
+        </ul>
+    </li>
+    <li>计算机在使用中断方式与外界交换信息时，保护现场的工作应该是（ <span class="answer" onclick="this.innerHTML = '<b>C</b>'">___</span> ）
+        <ul>
+            <li>A、由CPU自动完成</li>
+            <li>B、 在中断响应中完成</li>
+            <li>C、应由中断服务程序完成</li>
+            <li>D、 在主程序中完成</li>
+        </ul>
+    </li>
+    <li>MCS-51的中断允许触发器内容为83H，CPU将响应的中断请求是（ <span class="answer" onclick="this.innerHTML = '<b>D</b>'">___</span> ）
+        <ul>
+            <li>A、 INT0，INT1</li>
+            <li>B、 T0，T1</li>
+            <li>C、 T1，串行接口</li>
+            <li>D、  INT0，T0</li>
+        </ul>
+    </li>
+    <li>若MCS-51中断源都编程为同级，当它们同时申请中断时，CPU首先响应（ <span class="answer" onclick="this.innerHTML = '<b>B</b>'">___</span> ）
+        <ul>
+            <li>A、 INT1</li>
+            <li>B、 INT0</li>
+            <li>C、 T1</li>
+            <li>D、 T0</li>
+        </ul>
+    </li>
+    <li>当CPU响应串行接口中断时，程序应转到（ <span class="answer" onclick="this.innerHTML = '<b>C</b>'">___</span> ）
+        <ul>
+            <li>A、 0003H</li>
+            <li>B、 0013H</li>
+            <li>C、 0023H</li>
+            <li>D、 0033H</li>
+        </ul>
+    </li>
+    <li>执行MOV  IE，#03H后，MCS-51将响应的中断是（ <span class="answer" onclick="this.innerHTML = '<b>D</b>'">___</span> ）
+        <ul>
+            <li>A、 1个</li>
+            <li>B、 2个</li>
+            <li>C、 3个</li>
+            <li>D、 0个</li>
+        </ul>
+    </li>
+    <li>外部中断1固定对应的中断入口地址为（ <span class="answer" onclick="this.innerHTML = '<b>C</b>'">___</span> ）
+        <ul>
+            <li>A、 0003H</li>
+            <li>B、 000BH</li>
+            <li>C、 0013H</li>
+            <li>D、 001BH</li>
+        </ul>
+    </li>
+    <li>MCS-51单片机可分为两个中断优先级别，各中断源的优先级别设定是利用寄存器（ <span class="answer" onclick="this.innerHTML = '<b>B</b>'">___</span> ）
+        <ul>
+            <li>A、 IE</li>
+            <li>B、 IP</li>
+            <li>C、 TCON</li>
+            <li>D、 SCON</li>
+        </ul>
+    </li>
+    <li>（ <span class="answer" onclick="this.innerHTML = '<b>C</b>'">___</span> ）非单片机系统响应中断的必要条件。
+        <ul>
+            <li>A、 TCON或SCON寄存器内的有关中断标志位为1</li>
+            <li>B、 IE中断允许寄存器内的有关中断允许位置1</li>
+            <li>C、 IP中断优先级寄存器内的有关位置1</li>
+            <li>D、 当前一条指令执行完</li>
+        </ul>
+    </li>
+    <li>各中断源发出的中断请求信号，都会标记在MCS-51系统中的（ <span class="answer" onclick="this.innerHTML = '<b>B</b>'">___</span> ）
+        <ul>
+            <li>A、 TMOD</li>
+            <li>B、 TCON/SCON</li>
+            <li>C、 IE</li>
+        </ul>
+    </li>
+</ol>
+
+<style>
+.answer {
+    cursor: pointer;
+    border-bottom: 1px dashed #000;
+}
+</style>
 
     
 
@@ -758,11 +878,26 @@ ADD A，@R0
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2024/06/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/">展开全文 >></a>
+      <a class="article-more-a" href="/2024/07/19/%E5%8D%95%E7%89%87%E6%9C%BA%E9%A2%98%E7%9B%AE-md/">展开全文 >></a>
     </p>
     
 
