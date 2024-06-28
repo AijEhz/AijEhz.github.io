@@ -306,6 +306,354 @@
 
 
   
+    <article id="post-单片机常用寄存器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2024/06/28/%E5%8D%95%E7%89%87%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%AF%84%E5%AD%98%E5%99%A8/" target="_blank">单片机常用寄存器</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2024/06/28/%E5%8D%95%E7%89%87%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%AF%84%E5%AD%98%E5%99%A8/" class="archive-article-date">
+        <time datetime="2024-06-28T04:15:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-06-28</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h2 id="常用寄存器"><a href="#常用寄存器" class="headerlink" title="常用寄存器"></a>常用寄存器</h2><h3 id="PSW-Program-Status-Word-地址-0xD0-状态寄存器"><a href="#PSW-Program-Status-Word-地址-0xD0-状态寄存器" class="headerlink" title="PSW (Program Status Word) - 地址: 0xD0 状态寄存器"></a>PSW (Program Status Word) - 地址: 0xD0 状态寄存器</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>CY</td>
+<td>AC</td>
+<td>F0</td>
+<td>RS1</td>
+<td>RS0</td>
+<td>OV</td>
+<td></td>
+<td>P</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>进位标志</td>
+<td>辅助进位标志</td>
+<td>用户标志</td>
+<td>寄存器组选择位1</td>
+<td>寄存器组选择位0</td>
+<td>溢出标志</td>
+<td>用户标志</td>
+<td>奇偶标志</td>
+</tr>
+</tbody></table>
+<h3 id="TCON-Timer-Control-地址-0x88-定时器-x2F-计数器控制寄存器"><a href="#TCON-Timer-Control-地址-0x88-定时器-x2F-计数器控制寄存器" class="headerlink" title="TCON (Timer Control) - 地址: 0x88 定时器&#x2F;计数器控制寄存器"></a>TCON (Timer Control) - 地址: 0x88 定时器&#x2F;计数器控制寄存器</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>TF1</td>
+<td>TR1</td>
+<td>TF0</td>
+<td>TR0</td>
+<td>IE1</td>
+<td>IT1</td>
+<td>IE0</td>
+<td>IT0</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>定时器1溢出标志</td>
+<td>定时器1运行控制位</td>
+<td>定时器0溢出标志</td>
+<td>定时器0运行控制位</td>
+<td>外部中断1标志</td>
+<td>外部中断1类型控制</td>
+<td>外部中断0标志</td>
+<td>外部中断0类型控制</td>
+</tr>
+</tbody></table>
+<h3 id="TMOD-Timer-Mode-地址-0x89-定时器-x2F-计数器工作控制寄存器"><a href="#TMOD-Timer-Mode-地址-0x89-定时器-x2F-计数器工作控制寄存器" class="headerlink" title="TMOD (Timer Mode) - 地址: 0x89 定时器&#x2F;计数器工作控制寄存器"></a>TMOD (Timer Mode) - 地址: 0x89 定时器&#x2F;计数器工作控制寄存器</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>GATE1</td>
+<td>C&#x2F;T1</td>
+<td>M1_1</td>
+<td>M1_0</td>
+<td>GATE0</td>
+<td>C&#x2F;T0</td>
+<td>M0_1</td>
+<td>M0_0</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>定时器1门控</td>
+<td>定时器1计数&#x2F;定时选择</td>
+<td>定时器1模式选择位1</td>
+<td>定时器1模式选择位0</td>
+<td>定时器0门控</td>
+<td>定时器0计数&#x2F;定时选择</td>
+<td>定时器0模式选择位1</td>
+<td>定时器0模式选择位0</td>
+</tr>
+</tbody></table>
+<h3 id="IE-Interrupt-Enable-地址-0xA8-中断控制寄存器"><a href="#IE-Interrupt-Enable-地址-0xA8-中断控制寄存器" class="headerlink" title="IE (Interrupt Enable) - 地址: 0xA8 中断控制寄存器"></a>IE (Interrupt Enable) - 地址: 0xA8 中断控制寄存器</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>EA</td>
+<td>-</td>
+<td>-</td>
+<td>ES</td>
+<td>ET1</td>
+<td>EX1</td>
+<td>ET0</td>
+<td>EX0</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>全局中断允许</td>
+<td>保留</td>
+<td>保留</td>
+<td>串行中断允许</td>
+<td>定时器1中断允许</td>
+<td>外部中断1允许</td>
+<td>定时器0中断允许</td>
+<td>外部中断0允许</td>
+</tr>
+</tbody></table>
+<h3 id="IP-Interrupt-Priority-地址-0xB8-中断优先级寄存器"><a href="#IP-Interrupt-Priority-地址-0xB8-中断优先级寄存器" class="headerlink" title="IP (Interrupt Priority) - 地址: 0xB8 中断优先级寄存器"></a>IP (Interrupt Priority) - 地址: 0xB8 中断优先级寄存器</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>PS</td>
+<td>PT1</td>
+<td>PX1</td>
+<td>PT0</td>
+<td>PX0</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>保留</td>
+<td>保留</td>
+<td>保留</td>
+<td>串行中断优先级</td>
+<td>定时器1中断优先级</td>
+<td>外部中断1优先级</td>
+<td>定时器0中断优先级</td>
+<td>外部中断0优先级</td>
+</tr>
+</tbody></table>
+<h3 id="SCON-Serial-Control-地址-0x98"><a href="#SCON-Serial-Control-地址-0x98" class="headerlink" title="SCON (Serial Control) - 地址: 0x98"></a>SCON (Serial Control) - 地址: 0x98</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>SM0</td>
+<td>SM1</td>
+<td>SM2</td>
+<td>REN</td>
+<td>TB8</td>
+<td>RB8</td>
+<td>TI</td>
+<td>RI</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>串行模式选择位0</td>
+<td>串行模式选择位1</td>
+<td>多机通信使能</td>
+<td>接收使能</td>
+<td>发送数据的第9位</td>
+<td>接收数据的第9位</td>
+<td>发送中断标志</td>
+<td>接收中断标志</td>
+</tr>
+</tbody></table>
+<h3 id="PCON-Power-Control-地址-0x87-电源控制寄存器（常用SMOD位）"><a href="#PCON-Power-Control-地址-0x87-电源控制寄存器（常用SMOD位）" class="headerlink" title="PCON (Power Control) - 地址: 0x87 电源控制寄存器（常用SMOD位）"></a>PCON (Power Control) - 地址: 0x87 电源控制寄存器（常用SMOD位）</h3><table>
+<thead>
+<tr>
+<th>位</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>名称</td>
+<td>SMOD</td>
+<td>-</td>
+<td>-</td>
+<td>GF1</td>
+<td>GF0</td>
+<td>PD</td>
+<td>IDL</td>
+<td>-</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>串行模式速率倍增</td>
+<td>保留</td>
+<td>保留</td>
+<td>通用标志1</td>
+<td>通用标志0</td>
+<td>掉电模式使能</td>
+<td>空闲模式使能</td>
+<td>保留</td>
+</tr>
+</tbody></table>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2024/06/28/%E5%8D%95%E7%89%87%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%AF%84%E5%AD%98%E5%99%A8/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-AT24C02-I2C总线-的原理及应用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1013,98 +1361,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2023/01/04/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B%E5%8F%8A%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-数码管模块的原理及代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2023/01/04/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" target="_blank">数码管模块的原理及代码</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2023/01/04/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/" class="archive-article-date">
-        <time datetime="2023-01-04T08:12:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-04</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>51单片机数码管模块的原理及代码</p>
-    
-    <a class="article-more-a" href="/2023/01/04/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">嵌入式</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">51单片机</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2023/01/04/%E6%95%B0%E7%A0%81%E7%AE%A1%E6%A8%A1%E5%9D%97%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E4%BB%A3%E7%A0%81/">展开全文 >></a>
     </p>
     
 
